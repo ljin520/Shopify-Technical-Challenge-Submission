@@ -129,14 +129,14 @@
         </dependency>
 
 
-        <!-- Spring面向切面编程 -->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>5.0.5.RELEASE</version>
         </dependency>
 
-        <!-- MyBatis整合Spring的适配包 -->
+
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Commodity inventory management system</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Commodity inventory management system</h1>
+
+
+<form th:action="@{/commontGoods}" method="post" align="center">
+
+    id：<input type="text" readonly name="id" th:value="${goods.id}"><br/>
+    name：<input type="text" readonly name="name" th:value="${goods.name}"><br/>
+
+    address：<input type="text" name="address"><br/>
+    phone：<input type="text" name="phone" ><br/>
+    email：<input type="text" name="email"><br/>
+    number：<input type="text" name="number" ><br/>
+    <input type="submit" value="delivery">
+</form>
+
+
+</body>
+</html>

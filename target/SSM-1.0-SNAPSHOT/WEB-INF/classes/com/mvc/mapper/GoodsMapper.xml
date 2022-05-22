@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mvc.mapper.GoodsMapper">
+
+
+    <insert id="addGoods">
+        INSERT INTO goods (`name` , `price` , `num`) values(#{goods.name},#{goods.price},#{goods.num})
+    </insert>
+
+
+    <delete id="deleteGoods">
+        DELETE FROM goods WHERE id=#{id}
+    </delete>
+
+
+    <update id="updateGoods">
+        UPDATE goods SET `name`=#{goods.name} , `price`=#{goods.price},num=#{goods.num} WHERE id=#{goods.id}
+    </update>
+
+    <select id="queryGoodsById" resultType="com.mvc.javabean.Goods">
+        SELECT `id`,`name` , `price` , `num` FROM goods where `id`=#{id}
+    </select>
+
+
+    <select id="queryGoods" resultType="com.mvc.javabean.Goods">
+        SELECT `id`,`name` , `price` , `num` FROM goods
+    </select>
+
+
+
+</mapper>

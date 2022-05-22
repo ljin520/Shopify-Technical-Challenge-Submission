@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>商品库存管理</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Commodity inventory management system</h1>
+
+
+<form th:action="@{/updateGoods}" method="post" align="center">
+    <input type="hidden" name="id" th:value="${goods.id}">
+    items name：<input type="text" name="name" th:value="${goods.name}"><br/>
+    items price：<input type="text" name="price" th:value="${goods.price}"><br/>
+    items number：<input type="text" name="num" th:value="${goods.num}"><br/>
+    <input type="submit" value="update">
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Commodity inventory management system</title>
+    <style>
+        h1,div{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Commodity Inventory Management System</h1>
+
+
+
+        <table id="root" border="1" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <th>Items ID</th>
+                <th>Items Name</th>
+                <th>Items Price</th>
+                <th>Items Number</th>
+                <th>Operation</th>
+            </tr>
+
+
+            <tr th:each="goodsList : ${data}">
+                <td th:text="${goodsList.id}"></td>
+                <td th:text="${goodsList.name}"></td>
+                <td th:text="${goodsList.price}"></td>
+                <td th:text="${goodsList.num}"></td>
+                <td>
+                    <a @click="delete" th:href="@{'/goods/'+${goodsList.id}}">Delete</a>
+                    <a th:href="@{'/query/'+${goodsList.id}}">Edit</a>
+                    <a th:href="@{'/comment/'+${goodsList.id}}">Create shipments</a>
+
+                </td>
+            </tr>
+
+
+        </table>
+
+        <div>
+            <a th:href="@{/add}">Create new item</a>
+        </div>
+
+</body>
+</html>
