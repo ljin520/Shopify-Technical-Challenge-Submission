@@ -4,7 +4,8 @@
 
 
 
-## Using SSM, MyQSL, Tomcat
+## Using SSM, MyQSL
+## Tomcat, IntelliJ IDEA, JDK, MAVEN
 ## Enabled function:
 
 
