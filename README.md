@@ -7,6 +7,7 @@ Using SSM
 An inventory tracking web application for a logistics company. 
 
 
+
 enabled function:
 
 1. View a list of items;
