@@ -1,25 +1,26 @@
-Inventory Management Web Application
+#Inventory Management Web Application
+
+ ## An inventory tracking web application for a logistics company
 
 
-Using SSM
-
-
-An inventory tracking web application for a logistics company. 
+## Using SSM
 
 
 
-enabled function:
+## Enabled function:
 
 
-1. View a list of items;
 
-  2.Create inventory items;
+ 
+  ###1. View a list of items;
 
-  3.Edit items;
+  ###2.Create inventory items;
 
-  4.Delete items;
+  ###3.Edit items;
 
-  5.Create “shipments” and assign inventory to the shipment, and adjust inventory appropriately.
+  ###4.Delete items;
+
+  ###5.Create “shipments” and assign inventory to the shipment, and adjust inventory appropriately.
 
 
 
