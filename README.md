@@ -32,6 +32,7 @@ Create a shipment. Only one item is shipped each time, the number of the item de
 
 
 Before the shippment of Fairground Shorts 
+
 ![image](https://user-images.githubusercontent.com/78027883/169697159-52f705e3-98d4-4cd5-a8e4-cbc11296e837.png)
 
 After the shippment of Fairground Shorts 
