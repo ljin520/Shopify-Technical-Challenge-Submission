@@ -21,3 +21,5 @@ enabled function:
 
 5.Create “shipments” and assign inventory to the shipment, and adjust inventory appropriately.
 
+
+
